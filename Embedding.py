@@ -2,7 +2,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from torch import cuda
 
 
-def get_embedding_function():
+def embedding_function():
     embed_model_id = 'sentence-transformers/all-MiniLM-L6-v2'
     device = f'cuda:{cuda.current_device()}' if cuda.is_available() else 'cpu'
 
